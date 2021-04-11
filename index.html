@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid API</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!--start form-->
+        <form class="form-inline" style="margin-top: 20px;margin-left: 20%;">
+            <div class="form-group">
+                <input type="text" class="form-control" id="country" placeholder="Country" name="country" required />
+            </div>
+            <div class="form-group">
+                <input type="date" class="form-control" id="first" name="date-from" required />
+            </div>
+            <div class="form-group">
+                <input type="date" class="form-control" id="second" name="date-to" required />
+            </div>
+            <button type="button" class="btn" id="submit-btn" onclick="result(country,first,second)">Submit</button>
+        </form>
+        <!--end form-->
+    </div>
+
+    <!--result container-->
+    <div id="res">
+
+    </div>
+<!--end result container-->
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+body{
+    background-image: url("../bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+
+#country,#first,#second{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 5px;
+    margin-left: 20px;
+}
+
+#submit-btn{
+    font-family: calibri ;
+    background-color: blue;
+    color: white;
+    padding: 5px;
+}
+#submit-btn:hover{
+    cursor: pointer;
+}
+
+#res{
+    margin-left: 30%;
+    margin-top: 30px;
+}
